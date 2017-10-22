@@ -1,0 +1,14 @@
+- message: Make your choice
+  name: choice
+  type: SingleChoice
+  options:
+    - label: Button 1
+      value: 1
+    - label: Button 2
+      value: 2
+  replyMessage: Answer {choice.label}!
+
+- message: Name
+  name: name
+  type: String
+  replyMessage: Okay {name}
