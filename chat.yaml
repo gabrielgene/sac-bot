@@ -1,14 +1,23 @@
-- message: Make your choice
+- message: Olá qual o seu nome?
+  name: name
+  type: String
+
+- message: Qual tipo de atendimento você deseja {name}?
   name: choice
   type: SingleChoice
   options:
-    - label: Button 1
-      value: 1
-    - label: Button 2
-      value: 2
-  replyMessage: Answer {choice.label}!
+    - label: Titulo de Eleitor
+      value: titulo
+    - label: Segunda via RG
+      value: rg
+    - label: Emissão da Carteira de Trabalho
+      value: trab
+  next: {choice.value}
 
-- message: Name
-  name: name
+- message: você escolheu titulo!
+  name: titulo
   type: String
-  replyMessage: Okay {name}
+
+- message: você escolheu rg!
+  name: rg
+  type: String
