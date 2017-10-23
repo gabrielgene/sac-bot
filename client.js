@@ -4,8 +4,7 @@ $(document).ready(function() {
 
     new YveBot(rules, {
       target: '.Chat',
-      name: 'YveBot',
-      timestampable: true,
+      name: 'SacBot',
     })
       .on('render', function() {
         document.querySelector('.yvebot-form-input').focus();
