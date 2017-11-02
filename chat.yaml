@@ -2,8 +2,8 @@
   name: name
   type: String
 
-- message: Qual tipo de atendimento você deseja {name}?
-  name: choice
+- message: Qual tipo de atendimento você deseja, {name}?
+  name: service
   type: SingleChoice
   options:
     - label: Titulo de Eleitor
@@ -12,8 +12,31 @@
       value: 2
     - label: Emissão da Carteira de Trabalho
       value: 3
+  replyMessage: Ok, você escolheu {service.label}.
 
-- message: Ok, você escolheu {choice.label}.
-  name: answer
+- message: Por favor informe seu CPF.
+  name: cpf
+  type: Number
+  validators:
+    - number: true
 
-- message: Por favor informe sua data de nascimento.
+- message: Por favor informe sua identidade (RG).
+  name: rg
+  type: Number
+  validators:
+    - number: true
+
+- message: Em qual SAC deseja retirar seu Título.
+  name: place
+  type: SingleChoice
+  options:
+    - label: Salvador Shopping
+      value: 1
+    - label: Paralalea
+      value: 2
+    - label: Bella Vista
+      value: 3
+  replyMessage: Ok, você vai retirar seu documento no Shopping {place.label}.
+
+- message: Obrigado, seu requerimnto foi enviado com sucesso. Entraremos em contato em breve.
+
