@@ -7,17 +7,13 @@
   type: SingleChoice
   options:
     - label: Titulo de Eleitor
-      value: titulo
+      value: 1
     - label: Segunda via RG
-      value: rg
+      value: 2
     - label: Emissão da Carteira de Trabalho
-      value: trab
-  next: {choice.value}
+      value: 3
 
-- message: você escolheu titulo!
-  name: titulo
-  type: String
+- message: Ok, você escolheu {choice.label}.
+  name: answer
 
-- message: você escolheu rg!
-  name: rg
-  type: String
+- message: Por favor informe sua data de nascimento.

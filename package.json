@@ -1,9 +1,9 @@
 {
-  "name": "yvebot-examples-web",
+  "name": "sac-bot-examples-web",
   "version": "1.0.0",
-  "description": "yve-bot examples - web",
+  "description": "sac-bot examples - web",
   "main": "index.js",
-  "author": "Anderson de Oliveira <andersonba@me.com>",
+  "author": "Gabriel Genê <gabrielgene.github.com.br>",
   "license": "MIT",
   "dependencies": {
     "express": "^4.15.4"
