@@ -38,5 +38,7 @@
       value: 3
   replyMessage: Ok, você vai retirar seu documento no Shopping {place.label}.
 
+- message: Sua senha para retirada do documento é TE19.
+
 - message: Obrigado, seu requerimnto foi enviado com sucesso. Entraremos em contato em breve.
 
