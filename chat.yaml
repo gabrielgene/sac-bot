@@ -30,15 +30,15 @@
   name: place
   type: SingleChoice
   options:
-    - label: Salvador Shopping
+    - label: Salvador
       value: 1
     - label: Paralalea
       value: 2
     - label: Bella Vista
       value: 3
-  replyMessage: Ok, você vai retirar seu documento no Shopping {place.label}.
+  replyMessage: Ok {name}, CPF {cpf}, RG {rg}, você vai retirar seu documento no Shopping {place.label}.
 
 - message: Sua senha para retirada do documento é TE19.
 
-- message: Obrigado, seu requerimnto foi enviado com sucesso. Entraremos em contato em breve.
+- message: Obrigado, seu requerimento foi enviado com sucesso. Entraremos em contato em breve.
 
